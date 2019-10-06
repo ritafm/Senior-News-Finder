@@ -1,7 +1,7 @@
 {
   "name": "Sequelize-Passport-Example",
   "version": "1.0.0",
-  "description": "",
+  "description": "news finder",
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -22,5 +22,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ritafm/project_two.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ritafm/project_two/issues"
+  },
+  "homepage": "https://github.com/ritafm/project_two#readme"
 }
