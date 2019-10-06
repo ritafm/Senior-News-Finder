@@ -1,0 +1,6 @@
+https://newsapi.org/docs/get-started
+
+https://newsapi.org/docs.
+
+
+Your API key is: 0642787cf5e744f68ecb6d77e9c99efb
