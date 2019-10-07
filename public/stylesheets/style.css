@@ -11,3 +11,8 @@ body {
 .navbar {
   background-color: #d9d4d9;
 }
+
+.btn  {
+  background-color: silver;
+  color: #e71f91; /*Skyline pink */
+}

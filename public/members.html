@@ -31,18 +31,31 @@
     </div>
   </nav>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Welcome <span class="member-name"></span></h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <button id="good-news" type="button" class="btn btn-primary btn-lg left">Good News</button>
+    <button id="health-news" type="button" class="btn btn-primary btn-lg center">Health News</button>
+    <button id="financial-news" type="button" class="btn btn-primary btn-lg right">Financial News</button>
+  </div> -->
+
 <div id="accordion">
   <div class="card">
       <div class="card-header" id="headingOne">
           <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
+              <button id="good-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Good News
               </button>
           </h5>
       </div>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
               <ul>
                   <li>response.json here + facebook share button</li>
@@ -53,7 +66,7 @@
   <div class="card">
       <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+              <button id="financial-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                   aria-expanded="false" aria-controls="collapseTwo">
                   Financial News
               </button>
@@ -70,7 +83,7 @@
   <div class="card">
       <div class="card-header" id="headingThree">
           <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+              <button id="health-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                   aria-expanded="false" aria-controls="collapseThree">
                   Health News
               </button>
@@ -87,13 +100,13 @@
 </div>
 
 <!-- Your share button code -->
-<div class="modal-footer fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+<!-- <div class="modal-footer fb-share-button" data-href="https://www.your-domain.com/your-page.html"
   data-layout="button_count"></div>
 </div>
 </div>
-
+-->
 <!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
+<!-- <div id="fb-root"></div>
 <script>
   (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -103,7 +116,7 @@
     js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-</script>
+</script>  -->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -113,6 +126,8 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
 
 </body>
 

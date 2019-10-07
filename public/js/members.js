@@ -4,10 +4,11 @@ $(document).ready(function () {
   $.get("/api/user_data").then(function (data) {
     $(".member-name").text(data.email);
   });
-});
 
-//the following logic returns an object to the console (tested and functional) but the object doesn't get rendered in the HTML______________________________________________________________
+
+//newsapi.org
 $("#good-news").click(function () {
+
 
   var url = 'https://newsapi.org/v2/everything?' +
     'q=retirement&' +
@@ -17,19 +18,20 @@ $("#good-news").click(function () {
     'sources=associated-press,abc-news,cnn,the-washington-post,the-washington-times,the-new-york-times,msnbc,cbs-news,medical-news-today,nbc-news,newsweek,the-wall-street-journal,new-york-magazine,google-news&' +
     'apiKey=0642787cf5e744f68ecb6d77e9c99efb';
 
-  var req = new Request(url);
 
-  fetch(req)
-    .then(function (response) {
-      console.log("good-news test", response.json());
-    })
+    var req = new Request(url);
+
+    fetch(req)
+        .then(function(response) {
+            console.log("good-news test", response.json());
+        })
 
   });
 
 $("#health-news").click(function () {
 
   var url1 = 'https://newsapi.org/v2/everything?' +
-    'q=retirement,health&' +
+    'q=retirement&' +
     'from=2019-10-05&' +
     'sortBy=popularity&' +
     'pageSize=5&' +
@@ -47,7 +49,7 @@ $("#health-news").click(function () {
 $("#financial-news").click(function () {
 
   var url2 = 'https://newsapi.org/v2/everything?' +
-    'q=retirement,financial&' +
+    'q=retirement&' +
     'from=2019-10-05&' +
     'sortBy=popularity&' +
     'pageSize=5&' +
@@ -61,16 +63,4 @@ $("#financial-news").click(function () {
       console.log("financial-news test", response.json());
     })
 });
-//_________________________________________________________________________________________________________________________________________
-
-
-// this is the example from BS of logic to control the modal.  Not linked to my object yet
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
+});
