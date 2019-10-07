@@ -35,31 +35,46 @@ Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
       </div>
     </div>
   </div>
-  
-  <div class="container">
-    <button id="good-news" type="button" class="btn btn-primary btn-lg left">Good News</button>
-    <button id="health-news" type="button" class="btn btn-primary btn-lg center">Health News</button>
-    <button id="financial-news" type="button" class="btn btn-primary btn-lg right">Financial News</button>
-  </div>
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+  <!-- <button id="good-news" type="button" class="btn btn-primary btn-lg left">Good News</button> -->
+  <button id="good-news" class="btn-primary" type="button" data-toggle="modal" data-target="#myModal">Good News</button>
 
-  <!-- Your share button code -->
-  <div class="fb-share-button" data-href="https://www.your-domain.com/your-page.html" data-layout="button_count">
-  </div>
+  <button id="health-news" type="button" class="btn btn-primary btn-lg center">Health News</button>
+  <button id="financial-news" type="button" class="btn btn-primary btn-lg right">Financial News</button>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <!-- Your share button code -->
+        <div class="modal-footer fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+          data-layout="button_count"></div>
+      </div>
+    </div>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/members.js"></script>
 
 </body>
 

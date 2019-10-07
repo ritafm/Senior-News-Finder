@@ -6,8 +6,8 @@ $(document).ready(function () {
   });
 });
 
+//the following logic returns an object to the console (tested and functional) but the object doesn't get rendered in the HTML______________________________________________________________
 $("#good-news").click(function () {
-  alert("Handler for .click() called.");
 
   var url = 'https://newsapi.org/v2/everything?' +
     'q=retirement&' +
@@ -27,7 +27,6 @@ $("#good-news").click(function () {
   });
 
 $("#health-news").click(function () {
-  alert("Handler for .click() called.");
 
   var url1 = 'https://newsapi.org/v2/everything?' +
     'q=retirement,health&' +
@@ -46,7 +45,6 @@ $("#health-news").click(function () {
 });
 
 $("#financial-news").click(function () {
-  alert("Handler for .click() called.");
 
   var url2 = 'https://newsapi.org/v2/everything?' +
     'q=retirement,financial&' +
@@ -63,3 +61,16 @@ $("#financial-news").click(function () {
       console.log("financial-news test", response.json());
     })
 });
+//_________________________________________________________________________________________________________________________________________
+
+
+// this is the example from BS of logic to control the modal.  Not linked to my object yet
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
