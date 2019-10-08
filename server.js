@@ -1,7 +1,7 @@
 // Requiring necessary npm packages
 
 var express = require("express");
-var cors = require("cors");
+// var cors = require("cors");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
@@ -12,7 +12,7 @@ var db = require("./models");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
-app.use(cors());
+// app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
