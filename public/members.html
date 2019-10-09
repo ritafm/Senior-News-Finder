@@ -24,7 +24,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/logout">
+        <a href="/logout" class="navbar-brand">
           Logout
         </a>
       </div>
@@ -45,64 +45,58 @@
     <button id="financial-news" type="button" class="btn btn-primary btn-lg right">Financial News</button>
   </div> -->
 
-<div id="accordion">
-  <div class="card">
+  <div id="accordion">
+    <div class="card">
       <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-              <button id="good-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Good News
-              </button>
-          </h5>
+        <h5 class="mb-0">
+          <button id="good-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="false" aria-controls="collapseOne">
+            Good News
+          </button>
+        </h5>
       </div>
-
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-              <ul>
-                  <li>response.json here + facebook share button</li>
-              </ul>
-          </div>
+        <div class="card-body" id="goodArticles"></div>
       </div>
-  </div>
-  <div class="card">
+    </div>
+
+    <div class="card">
       <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-              <button id="financial-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  Financial News
-              </button>
-          </h5>
+        <h5 class="mb-0">
+          <button id="financial-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Financial News
+          </button>
+        </h5>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body" id="financeArticles"></div>
+        <div class="card-body" id="financeArticles"></div>
       </div>
-  </div>
-  <div class="card">
+    </div>
+
+    <div class="card">
       <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-              <button id="health-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Health News
-              </button>
-          </h5>
+        <h5 class="mb-0">
+          <button id="health-news" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Health News
+          </button>
+        </h5>
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-              <ul>
-                  <li>response.json here + facebook share button</li>
-              </ul>
-          </div>
+        <div class="card-body" id="healthArticles"></div>
       </div>
+    </div>
   </div>
-</div>
 
-<!-- Your share button code -->
-<!-- <div class="modal-footer fb-share-button" data-href="https://www.your-domain.com/your-page.html"
+  <!-- Your share button code -->
+  <!-- <div class="modal-footer fb-share-button" data-href="https://www.your-domain.com/your-page.html"
   data-layout="button_count"></div>
 </div>
 </div>
 -->
-<!-- Load Facebook SDK for JavaScript -->
-<!-- <div id="fb-root"></div>
+  <!-- Load Facebook SDK for JavaScript -->
+  <!-- <div id="fb-root"></div>
 <script>
   (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -114,14 +108,17 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>  -->
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
 

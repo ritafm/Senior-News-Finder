@@ -36,6 +36,7 @@ $(document).ready(function() {
   }
 
   function handleLoginErr(err) {
+    console.log("#alert");
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
   }

@@ -25,9 +25,14 @@ $(document).ready(function () {
     // Make sure to return articles from this function after logging it
     .then(({articles}) => { console.log(articles); return articles; })
     // Take the articles as an argument, then log the author property of the first entry.
-    // .then(articles => console.log(articles["0"].author)); 
-
+    // .then(articles => console.log(articles["0"].author))
+    .then(articles => {
+    for (let i = 0; i < articles.length; i++) {
+      $("#goodArticles").append("<a href='" + articles[i].url + "'>" + articles[i].title + "</a><br>");  
+    }
+  })
   });
+
 
   $("#health-news").click(function () {
 
@@ -45,8 +50,14 @@ $(document).ready(function () {
     // Make sure to return articles from this function after logging it
     .then(({articles}) => { console.log(articles); return articles; })
     // Take the articles as an argument, then log the author property of the first entry.
-    // .then(articles => console.log(articles["0"].author)); 
+    // .then(articles => console.log(articles["0"].author))
+    .then(articles => {
+    for (let i = 0; i < articles.length; i++) {
+      $("#healthArticles").append("<a href='" + articles[i].url + "'>" + articles[i].title + "</a><br>");  
+    }
+  })
   });
+
 
   $("#financial-news").on("click",function() {
 
@@ -65,13 +76,11 @@ $(document).ready(function () {
     // Make sure to return articles from this function after logging it
     .then(({articles}) => { console.log(articles); return articles; })
     // Take the articles as an argument, then log the author property of the first entry.
-  // .then(articles => console.log(articles["0"].author))
-  .then(articles => {
+    // .then(articles => console.log(articles["0"].author))
+    .then(articles => {
     for (let i = 0; i < articles.length; i++) {
       $("#financeArticles").append("<a href='" + articles[i].url + "'>" + articles[i].title + "</a><br>");  
     }
-
-  });
-
-  });
+    })
+  })
 });
