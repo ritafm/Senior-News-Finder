@@ -16,3 +16,9 @@ body {
   background-color: silver;
   color: #e71f91; /*Skyline pink */
 }
+
+.linkPic {
+  height: 100px;
+  width: auto;
+
+}
