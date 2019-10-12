@@ -18,13 +18,34 @@
   <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat&display=swap" rel="stylesheet">
-  <!-- sharethis.com button -->
-  <script type="text/javascript"
-    src="https://platform-api.sharethis.com/js/sharethis.js#property=5d9fe2ab26f4f800126d33f8&product=inline-share-buttons"
-    async="async"></script>
 </head>
 
 <body>
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+      window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '748868075540184',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=748868075540184&autoLogAppEvents=1">
+
+  </script>
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -86,12 +107,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-  <!-- Load Facebook SDK for JavaScript -->
-  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
