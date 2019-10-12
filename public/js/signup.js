@@ -36,8 +36,8 @@ $(document).ready(function() {
   }
 
   function handleLoginErr(err) {
-    console.log("#alert");
-    $("#alert .msg").text(err.responseJSON);
+    console.log(err);
+    $("#alert .msg").text(err.responseText+ ".  If returning user, go to login page.");
     $("#alert").fadeIn(500);
   }
 });
