@@ -4,9 +4,9 @@ form.login {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* body {
   font-family: 'Josefin Sans', sans-serif;
-}
+} */
 
 .navbar {
   background-color: #d9d4d9;
@@ -18,7 +18,7 @@ body {
 }
 
 .linkPic {
-  height: 100px;
+  height: 90px;
   width: auto;
 
 }

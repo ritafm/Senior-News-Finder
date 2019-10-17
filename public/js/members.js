@@ -11,7 +11,7 @@ $("#good-news").click(function () {
 
   var url = 'https://newsapi.org/v2/everything?' +
     'q=retirement&' +
-    'from=2019-10-05&' +
+    // 'from=2019-10-05&' +
     'sortBy=popularity&' +
     'pageSize=3&' +
     'sources=associated-press,abc-news,cnn,the-washington-post,the-washington-times,the-new-york-times,msnbc,cbs-news,medical-news-today,nbc-news,newsweek,the-wall-street-journal,new-york-magazine,google-news&' +
@@ -93,7 +93,7 @@ $("#health-news").click(function () {
     .then(({
       articles
     }) => {
-      console.log(articles);
+      // console.log(articles);
       return articles;
     })
     // Take the articles as an argument, then log the author property of the first entry.
