@@ -10,8 +10,7 @@ $("#good-news").click(function () {
   $("#goodArticles").empty();
 
   var url = 'https://newsapi.org/v2/everything?' +
-    'q=retirement&' +
-    // 'from=2019-10-05&' +
+    'q=happy AND elderly&' +
     'sortBy=popularity&' +
     'pageSize=3&' +
     'sources=associated-press,abc-news,cnn,the-washington-post,the-washington-times,the-new-york-times,msnbc,cbs-news,medical-news-today,nbc-news,newsweek,the-wall-street-journal,new-york-magazine,google-news&' +
@@ -46,8 +45,7 @@ $("#financial-news").on("click", function () {
   $("#financeArticles").empty();
 
   var url2 = 'https://newsapi.org/v2/everything?' +
-    'q=finance&' +
-    'from=2019-10-05&' +
+    'q=finance AND elderly&' +
     'sortBy=popularity&' +
     'pageSize=3&' +
     'sources=associated-press,abc-news,cnn,the-washington-post,the-washington-times,the-new-york-times,msnbc,cbs-news,medical-news-today,nbc-news,newsweek,the-wall-street-journal,new-york-magazine,google-news&' +
@@ -79,8 +77,7 @@ $("#health-news").click(function () {
 
 
   var url1 = 'https://newsapi.org/v2/everything?' +
-    'q=aging healthy&' +
-    'from=2019-10-05&' +
+    'q=elderly AND healthy&' +
     'sortBy=popularity&' +
     'pageSize=3&' +
     'sources=associated-press,abc-news,cnn,the-washington-post,the-washington-times,the-new-york-times,msnbc,cbs-news,medical-news-today,nbc-news,newsweek,the-wall-street-journal,new-york-magazine,google-news&' +

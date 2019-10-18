@@ -37,7 +37,7 @@ $(document).ready(function() {
 
   function handleLoginErr(err) {
     console.log(err);
-    $("#alert .msg").text("Hey, don't I know you? Go to the login page.");
+    $("#alert .msg").text("Hey, don't I know you? Returning users head to the login page.");
     $("#alert").fadeIn(500);
   }
 });
