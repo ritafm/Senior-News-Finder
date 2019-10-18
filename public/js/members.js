@@ -31,7 +31,11 @@ $("#good-news").click(function () {
       for (let i = 0; i < articles.length; i++) {
         var $newDiv = $('<div class="fb-share-button" data-href="'+articles[i].url+'" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+articles[i].url+'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a></div>');
 
-        $("#goodArticles").append($newDiv)
+        var $twitterDiv = $('<a href="'+articles[i].url+'" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+
+        $("#goodArticles").append($newDiv);
+
+        $("#goodArticles").append($twitterDiv);
 
         $("#goodArticles").append("<img class='linkPic' src='" + articles[i].urlToImage+ "'>" + "<a href='" + 
         articles[i].url + "'>" + articles[i].title + "</a><br><br><br>");
@@ -63,7 +67,11 @@ $("#financial-news").on("click", function () {
       for (let i = 0; i < articles.length; i++) {
         var $newDiv = $('<div class="fb-share-button" data-href="'+articles[i].url+'" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+articles[i].url+'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a></div>');
 
-        $("#financeArticles").append($newDiv)
+        var $twitterDiv = $('<a href="'+articles[i].url+'" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+
+        $("#financeArticles").append($newDiv);
+
+        $("#financeArticles").append($twitterDiv);
 
         $("#financeArticles").append("<img class='linkPic' src='" + articles[i].urlToImage+ "'>" + "<a href='" + 
         articles[i].url + "'>" + articles[i].title + "</a><br><br><br>");
@@ -97,9 +105,13 @@ $("#health-news").click(function () {
     // .then(articles => console.log(articles["0"].author))
     .then(articles => {
       for (let i = 0; i < articles.length; i++) {
-        var $newDiv = $('<div class="fb-share-button" data-href="'+articles[i].url+'" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+articles[i].url+'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a></div>');
+        var $newDiv = $('<div class="fb-share-button" data-href="'+articles[i].url+'" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+articles[i].url+'&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a></div>');
 
-        $("#healthArticles").append($newDiv)
+        var $twitterDiv = $('<a href="'+articles[i].url+'" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>');
+
+        $("#healthArticles").append($newDiv);
+
+        $("#healthArticles").append($twitterDiv);
 
         $("#healthArticles").append("<img class='linkPic' src='" + articles[i].urlToImage+ "'>" + "<a href='" + 
         articles[i].url + "'>" + articles[i].title + "</a><br><br><br>");
