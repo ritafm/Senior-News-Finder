@@ -92,7 +92,7 @@
 
       .then(articles => {
         for (let i = 0; i < articles.length; i++) {
-          var $newDiv = $('<class="fb-share-button" data-href="' + articles[i].url + '"data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' + articles[i].url + '&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a>');
+          var $newDiv = $('<a class="fb-share-button" data-href="' + articles[i].url + '"data-layout="button_count" data-size="small" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' + articles[i].url + '&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a>');
 
           $("#healthArticles").append($newDiv);
 
