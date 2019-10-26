@@ -1,4 +1,3 @@
-# project_2
 Easy Poster
 
 Idea: The Marketing Assistants in my company are asked to search for and post articles on Facebook that match our brand image.  This entails quite a bit of time spent online searching and curating articles.  I am creating an app with pre-set search parameters that will return appropriate, on-message articles from reputable sources and enable easy posting to the corporate Facebook site.
