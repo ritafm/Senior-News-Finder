@@ -8,7 +8,7 @@ Problem: Marketing Assistants need to spend significant amounts of time searchin
 
 Goal: My goal is to provide fast, reliable content that still allows the user some freedom to personalize the message.  
 
---
+---
 
 Technologies Used: HTML, Axios, Cheerio, Express, Handlebars, Mongoose
  
